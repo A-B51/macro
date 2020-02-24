@@ -1,0 +1,119 @@
+\documentclass[11pt]{article} % font size
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{url}
+\usepackage{bbm}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{rotating}
+\usepackage{harvard}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{subfiles}
+
+
+% setting up the design
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+\renewcommand{\baselinestretch}{1.5} % line spacing
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.99}
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\floatpagefraction}{0.99}
+\setlength{\footnotesep}{5mm}
+\setlength{\parindent}{0em} % length of indent
+\setlength{\parskip}{1em} % length of paragraph skip
+
+% some shortcuts and user-declared macros
+\def\k{\ensuremath\kappa}
+\def\l{\ensuremath\lambda}
+
+%\addtolength{\oddsidemargin}{-0.5cm} % paper dimensions
+%\addtolength{\evensidemargin}{-0.5cm}
+%\addtolength{\textwidth}{1cm}
+%\addtolength{\topmargin}{-0.5cm}
+
+
+\begin{document}
+\title{\huge{Mathematics for Economists}}
+
+\author{Portfolio Theory and Diversification\\
+    \\
+    --- Group Examination Paper ---\\
+    \\
+    Pascal Amiet (18-605-428)\\
+    André Bittencourt (17-622-887)\\
+    Christina Borner (17-609-702)\\
+    Guillaume Eelbode (18-608-778)\\
+    Caroline Heuwing (17-619-123)\\
+    \\
+    \textbf{Lecturer:}\\Giovanna Apicella\\
+    University of St.Gallen}
+\date{December 10, 2019}
+\maketitle
+\thispagestyle{empty}
+
+\pagebreak
+\subfile{abstract}
+\pagebreak
+
+\pagebreak
+\tableofcontents
+\pagebreak
+\listoffigures
+\listoftables
+\pagebreak
+
+\subfile{introduction}
+\pagebreak
+
+\subfile{question1}
+\pagebreak
+
+\subfile{question2}
+\pagebreak
+
+\subfile{question3}
+\pagebreak
+
+\subfile{question4}
+\pagebreak
+
+\subfile{question5}
+\pagebreak
+
+\subfile{question6}
+\pagebreak
+
+\subfile{question7}
+\pagebreak
+
+\subfile{question8}
+\pagebreak
+
+\subfile{question9}
+\pagebreak
+
+\subfile{question10}
+\pagebreak
+
+\subfile{conclusion}
+\pagebreak
+
+\vspace{0.2cm}
+
+\pagestyle{empty}
+\bibliographystyle{cje}
+\begin{spacing}{1}
+\bibliography{/Users/pgruber/Dropbox/svn/Common/Literature/articles}
+\end{spacing}
+
+\pagebreak
+\subfile{bibliography}
+
+\subfile{authorship}
+\pagebreak
+
+\end{document}
