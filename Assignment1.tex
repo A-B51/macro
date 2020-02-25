@@ -1,0 +1,187 @@
+\documentclass[11pt]{article} % font size
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{url}
+\usepackage{bbm}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{rotating}
+\usepackage{harvard}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{subfiles}
+
+
+% setting up the design
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+\renewcommand{\baselinestretch}{1.5} % line spacing
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.99}
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\floatpagefraction}{0.99}
+\setlength{\footnotesep}{5mm}
+\setlength{\parindent}{0em} % length of indent
+\setlength{\parskip}{1em} % length of paragraph skip
+
+% some shortcuts and user-declared macros
+\def\k{\ensuremath\kappa}
+\def\l{\ensuremath\lambda}
+
+%\addtolength{\oddsidemargin}{-0.5cm} % paper dimensions
+%\addtolength{\evensidemargin}{-0.5cm}
+%\addtolength{\textwidth}{1cm}
+%\addtolength{\topmargin}{-0.5cm}
+
+
+\begin{document}
+\title{\huge{Macroeconomics III}}
+
+\author{The Basic Solow Model\\
+    \\
+    --- Exercise 1 ---\\
+    \\
+    Pascal Aimet (18-605-887)\\
+    \\
+    André Bittencourt (17-622-887)\\
+    \\
+    Juliette Le Roy (18-614-008)\\
+    \\
+    \textbf{Lecturer:}\\Guido Cozzi\\
+    University of St.Gallen}
+\date{February 25, 2020}
+\maketitle
+\thispagestyle{empty}
+
+\pagebreak
+\section{Exercise 1.1}
+Please refer to $Exercise1.1.pdf$, all the answers regarding Exercise 1.1 are in this pdf file. \par
+\pagebreak
+
+\section{Exercise 1.2}
+\bigskip
+\textit{This is a simulation exercise. For help getting started with simulations in Excel, please see the document $excel_simulationexample.xls"$. Otherwise, feel free to use other Software you may like more. The relevant equations for the simulation can be found in the book chapter 3 and Lectures 1b and 1c on StudyNet $(Canvas).$}
+\par
+\noindent \textit{a) Explain the economic effects according to the basic Solow model of a decrease (at some time) in the population growth rate, n, from one constant level to a new and
+lower constant level using the transition diagram and the Solow diagram. How does it affect the steady state values of capital, income and consumption per worker? Explain qualitatively the transition from the old steady state to the new one: what happens in the period of the change, and what happens in the periods after that?}\par
+
+Observing the Transition Equation (II) and the Solow Equation (IV) and Equation (V), it becomes clear that for a decreasing \textit{n} we get a higher $k^* = k_{t+1} = k_t$, since the term $\frac{1}{1+n}$ gets bigger, if $n$ decreases. Visualizing this in the Transition Diagram, we get:\par
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=16cm]{pictures/Transition_Diagram1.png}
+    \caption{The transition from the level $k_0^*$ of capital per capita to the higher level $k_1^*$, as a cause of a sudden decrease of $n$}
+    \label{fig:Transition_Diagram1}
+\end{figure}
+That means, the economy will go from $k_0^*$ towards $k_1^*$.\par
+
+We can observe a similar effect on the Solow Diagram, with the difference that a smaller $n$ will rotate the line $(n+\delta)k_t$ slightly to the right, since a smaller $n$ implicates a flatter line, as follows:\par
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=16cm]{pictures/Solow_Diagram1.png}
+    \caption{The transition from the level $k_0^*$ of capital per capita to the higher level $k_1^*$, as a cause of a sudden decrease of $n$}
+    \label{fig:Transition_Diagram1}
+\end{figure}
+
+Both diagrams show that a decrease in $n$ have a positive effect on the steady state value of capital, $k^*$. \par
+
+The steady state of income is defined as:\par
+
+\begin{equation}
+    y^*=B(k^*)^\alpha=B^{\frac{1}{1-\alpha}}(\frac{s}{n+\delta})^{-1}
+\end{equation}
+
+We see that a smaller $n$ makes the term ${(\frac{s}{n+\delta})}^{-1} = \frac{n+\delta}{s}$ bigger, leading to a higher steady state income, $y^*$.\par
+
+The steady state of private consumption is defined in the pdf document (VII) as:\par
+
+\begin{equation}
+    cB({k^*})^\alpha=B({k^*})^\alpha-k^*(n+\delta)
+\end{equation}
+
+With a smaller $n$, the negative term $k^*(n+\delta)$ gets smaller, which implicates a higher level of in the steady state in consumption, $c^*$.\par
+
+During the period of change, the economy moves towards to the new steady-state-levels of capital, income and consumption per worker, until it ultimately converges to the new steady-state-levels, $k^*$, $y^*$ and $c^*$.\par
+
+\pagebreak
+
+\par
+\noindent \textit{b) Consider the parameterization of the basic Solow model: $B = 1$, $\alpha = \frac{1}{3}$,  $\delta = 0.1$,
+$n = 0.05$, and $s = 0.30$. Assume that in period zero the economy is in steady state at these parameter values, and then in period one the population growth rate drops to 0, other parameters remaining unchanged. By what percent does the reduction in the population growth rate change the steady state values of real wage, real interest rate, capital, income, and consumption per worker, respectively?}\par
+
+The initial steady state values of capital, income, consumption, real interest rate and real wage per worker are given by the following equations, respectively:\par
+
+\begin{equation}
+    k^*=B^{\frac{1}{1-\alpha}}({\frac{s}{n+\delta}})^\frac{1}{1-\alpha}
+\end{equation}
+
+\begin{equation}
+    y^*=B^{\frac{1}{1-\alpha}}({\frac{s}{n+\delta}})^\frac{\alpha}{1-\alpha}
+\end{equation}
+
+\begin{equation}
+    c^*=B^{\frac{1}{1-\alpha}}(1-s)({\frac{s}{n+\delta}})^\frac{\alpha}{1-\alpha}
+\end{equation}
+
+\begin{equation}
+    \rho^*=\alpha\frac{n+\delta}{s}-\delta
+\end{equation}
+
+\begin{equation}
+    w^*=(1-\alpha)B^{\frac{1}{1-\alpha}}({\frac{s}{n+\delta}})^\frac{\alpha}{1-\alpha}
+\end{equation}
+
+
+Given the parameters above, we become the following initial steady states: $k^*\approx2.83$, $y^*\approx1.41$\, $c^*\approx0.99$, $\rho^*\approx0.07$, $w^*\approx0.94$.\par
+
+If we compute the new steady state values, given n$n=0$ and indexed with "new", we have: ${k_{new}}^*\approx5.2$ (increase of \approx+84\%), ${y_{new}}^*\approx1.72$ (increase of \approx+22\%), ${c_{new}}^*\approx1.21$ (increase of \approx+22\%), ${\rho_{new}}^*\approx0.01$ (increase of \approx-84\%), ${w_{new}}^*\approx1.15$ (increase of \approx+22\%). \par
+
+\pagebreak
+
+\par
+\noindent \textit{c) Carry out a simulation of the model over the periods 0 to 100, and show in a diagram the evolution of $y_t$, $c_t$, $w_t$, $\rho_t$ and the growth rate $(y_t-y_{t-1})/y_{t-1}$ (or the approximate
+one $ln(y_t)-ln(y_{t-1})$ over the 100 periods. Does the country reach a new steady state during this time?}\par
+
+Please refer to Excel Spread Sheet $Exercise1.2c).xlsx$. Therefore, we conclude that the country has not reached a new steady state, since its steady state is equal to the previous one, $k^*\approx5.19615$. \par
+
+\pagebreak
+
+\section{Exercise 1.3}
+\bigskip
+\noindent \textit{This is an empirical exercise that tests the steady state predictions of the basic Solow
+model. The data for this exercise is from the Penn World Table 9.0. Please use the excel
+sheet DATA.xls posted on on StudyNet (Canvas) for this exercise.
+The steady state prediction of the Solow model is tested below by plotting (across 99
+countries) GDP per worker in 2014 against investment rates (averaged from 1960 to 2014)
+and population growth rates (averaged from 1960 to 2014); see figures 1 and 2 below.
+The directions of these empirical relationships are nicely in accordance with the basic
+Solow model. However, more precisely, the Solow model predicts (as shown in equation
+(8) below), that there should be a linear relationship between $ln(y^*)$ and $ln(s)-ln(n+\delta)$,
+and that the slope should be $\frac{\alpha}{1-\alpha}$:}
+
+\begin{equation}
+    ln(y^*)=\frac{1}{1-\alpha}ln(B)+\frac{\alpha}{1-\alpha}ln(s)-\frac{\alpha}{1-\alpha}ln(n+\delta)
+\end{equation}
+
+\noindent \textit{a) Explain the economic reasoning behind the direction of the relationship in the above
+figures for investment rates and population growth rates.}
+
+In the Solow Model, everything that is saved is invested. Therefore, our investment rate is equal our saving rate, $s$. The slope $\frac{\alpha}{1-\alpha}$ has a positive correlation with $s$, meaning that more savings lead to future economic growth, which is what the Solow Model predicts. On the other hand, it is clear that the slope $\frac{\alpha}{1-\alpha}$ is negatively correlated with population growth, $n$, which also meets the Solow model's prediction, that the growth of GDP per capita is negatively correlated with population growth, $n$. \par
+
+\noindent \textit{b) Test the relationship in equation (8) by creating a figure that (scatter-)plots $ln(y^*)$
+against $ln(s^*)-ln(n^i+\delta)$ across the same 99 countries (i indexes countries). Set
+$\delta = 0.1$. Add a line of best fit; what is its slope? Discuss how this matches up with the
+precise prediction of the Solow model according to equation (8).}
+
+ Please refer to the graph in the pdf file, Plot{_}1.3{_}b.pdf. \par
+
+The slope of the line of best fit is equal to $0.5105$.This is in accordance with the prediction of the Solow model, which states that the slope should be $\frac{\alpha}{1-\alpha}$=$\frac 1 2$.
+
+
+
+
+
+
+\end{document}
