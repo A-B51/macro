@@ -1,0 +1,142 @@
+\documentclass[11pt]{article} % font size
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{url}
+\usepackage{bbm}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{rotating}
+\usepackage{harvard}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{subfiles}
+\usepackage{tabularx}
+\usepackage{xspace}
+\usepackage[final]{pdfpages}
+
+
+% setting up the design
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+\renewcommand{\baselinestretch}{1.5} % line spacing
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.99}
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\floatpagefraction}{0.99}
+\setlength{\footnotesep}{5mm}
+\setlength{\parindent}{0em} % length of indent
+\setlength{\parskip}{1em} % length of paragraph skip
+
+% some shortcuts and user-declared macros
+\def\k{\ensuremath\kappa}
+\def\l{\ensuremath\lambda}
+
+%\addtolength{\oddsidemargin}{-0.5cm} % paper dimensions
+%\addtolength{\evensidemargin}{-0.5cm}
+%\addtolength{\textwidth}{1cm}
+%\addtolength{\topmargin}{-0.5cm}
+
+
+\begin{document}
+\title{\huge{Macroeconomics III}}
+
+\author{The General Solow Model\\
+    \\
+    --- Exercise 2 ---\\
+    \\
+    Pascal Amiet (18-605-887)\\
+    \\
+    André Bittencourt (17-622-887)\\
+    \\
+    Juliette Le Roy (18-614-008)\\
+    \\
+    \textbf{Lecturer:}\\Guido Cozzi\\
+    University of St.Gallen}
+\date{March 10, 2020}
+\maketitle
+\thispagestyle{empty}
+
+\pagebreak
+\section{Exercise 2.1}
+\bigskip
+\textit{This is an empirical exercise related to the Solow model for a small open economy. Consider
+the figure attached at the end of this document. The figure is taken from the textbook and
+shows the empirical relationship between the savings rate and the investment rate for 16
+OECD countries for 2 periods: 1960 to 1974 and 1990 to 2004. It is conjectured that the
+fitted line is becoming flatter over time, i.e. that the link between savings and investment
+becomes weaker. What about the subsequent period (i.e. from 2005 to today)? Follow
+the steps and answer the questions below.}
+
+\par
+
+\noindent\textit{a) Find the corresponding data for the 16 OECD countries depicted in the figure at the end of this document from 1990 onwards. You can find the data in the World Development
+Indicators dataset, offered by the $World$ $Bank^1$. Use Gross savings (\% of GDP) to
+measure savings and Gross capital formation (\% of GDP) to proxy for investment.}\par
+
+The table imported from the World Bank with the characteristics above can corresponds to the one in the next page:\par
+
+\pagebreak
+\include{Exercise_2_TableWB}
+\pagebreak
+
+\noindent\textit{b) For each of the 16 countries, average the savings rate and the investment rate (i) from 1990 to 2004 and (ii) from 2005 to the last year available.}\par
+
+\noindent\textit{(i)} The average savings and investment rate for the 16 countries from 1990 to 2004 are in the tables in the next page:\par
+
+\include{Exercise_2_Table_2bi)}
+\pagebreak
+
+\noindent\textit{(ii)} The average savings and investment rate for the 16 countries from 2005 to 2018 are in the tables in the next page:\par
+
+\include{Exercise_2_Table_2bii)}
+\pagebreak
+
+\noindent\textit{c) Replicate the figure appended at the end of this document for the period from 1990 to
+2004, i.e. plot the averaged investment rates against the averaged savings rates. Fit a
+linear line to this scatter plot and also display its slope.}\par
+
+Please refer to the diagram on the next page.\par
+
+\includepdf[]{Graphs/graph_2c.pdf}
+
+\noindent\textit{d) Create the same figure, but using the averages from 2005 to the latest year available.
+How has the slope changed? Is this in line with the conjecture? Briefly explain why
+we predicted that the line is becoming flatter over time.}\par
+
+In our regression from the years 1994 to 2004, our estimator (slope of the curve, popularly known as $\hat{\beta_1}$) has a value of appr. 0.4, whereas in the years 2005 to 2018 the value of the same estimator drops to 0.1. This lack of correlation means that the portion of investment made by a country cannot be fully explained by its rate of savings, as the basic Solow Model predicts. In the Solow Model for a small open economy, a portion of investment can be explained by capital movements, meaning that some economies can open their capital market to the world and thus get foreign investment or invest in another country. Therefore, a flatter line would mean that a smaller portion of investment is correlated with the savings rate, implying more openness to the capital market. This is a tendency that can be observed during the last years and tend to persist, as we have a ever more globalized and open world. To visualize this difference, please refer to the diagram on the next page. \par
+
+\includepdf[]{Graphs/graph_2d_both.pdf}
+
+\section{Exercise 2.2}
+\bigskip
+\noindent\textit{This is a simulation exercise related to the Solow model with exogenous growth, as discussed
+in chapter 5 of the textbook. Assume that there are two economies in their respective
+steady state, i.e. that their per capita variables grow at a constant rate (balanced
+growth) from $t = 0$ and that they remain in this steady state (and on their balanced
+growth path for the per capita variables) forever. Economy 1 is characterized by the following
+parameters: $\alpha=\frac{1}{3}, n=0.01, \delta=0.10, g=0.02$ and $s=0.35$. Economy 2 is
+characterized by the same parameters except for the savings rate, which is $s = 0.35$. $A$ is
+initially equal to one, i.e. $A_0 = 1$, in both economies.}\par
+
+\noindent\textit{a) Compute the steady state values $\tilde{k^*}$, $\tilde{y^*}$, and $\tilde{c^*}$ for both Economy 1 and Economy 2.}\par
+
+\noindent\textit{b) Simulate these two economies. Furthermore, simulate Economy 3, which is characterized
+by the same parameters as Economy 1 initially but changes its savings rate in
+period 10 to $s = 0.35$, the savings rate of Economy 2. For each of the three economies,
+create time series for $\tilde{k_t}$, $\tilde{y_t}$, $\tilde{c_t}$, $A_t$, $k_t$, $y_t$, $c_t$, $ln(y_t)$, $ln(c_t)$, ${g_t}^y=ln(y_t)$, ${g_t}^y=ln(y_t) - ln(y_{t-1})$ as well
+as the capital-output ratio $k_t/y_t$. Simulate 100 periods.$^2$}\par
+
+\noindent\textit{c) Create a set of diagrams showing the evolution over time of the following variables:
+\begin{itemize}
+    \item Diagram 1: $\tilde{y_t}$
+    \item Diagram 2: $ln(y_t)$
+    \item Diagram 3: $ln(c_t)$
+    \item Diagram 4: ${g_t}^y$
+    \item Diagram 5: $k_t/y_t$
+\end{itemize}
+In each of the diagrams, show the evolution for all three economies. Discuss your
+results.}\par
+
+\end{document}
