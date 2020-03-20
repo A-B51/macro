@@ -112,11 +112,73 @@ textbook,}\par
 \noindent\textit{a) Take the first order conditions with respect to the three production factors and derive the factor rewards
 (i.e. find $r_t = \frac{\partial{Y_t}}{\partial{K_t}}$, $w_t = \frac{\partial{Y_t}}{\partial{L_t}}$ and $u_t =\frac{\partial{Y_t}}{\partial({s_E}{R_t})}$).}\par
 
+\bigskip
+
+\begin{itemize}
+
+    \item $\frac{\partial{Y_t}}{\partial{K_t}} = \alpha{K_t}^{\alpha-1}({A_t}{L_t})^\beta({s_t}{R_t})^\epsilon$;\par since we have: 
+    $\alpha+\beta+\epsilon=1 \Leftrightarrow \beta=1-\alpha-\epsilon$ \par we can rewrite the previous expression inserting $\beta$ as \par
+    $\frac{\partial{Y_t}}{\partial{K_t}} = \alpha{K_t}^{\alpha-1}\frac{({A_t}{L_t})^{1-\alpha}}{({A_t}{L_t})^\epsilon}({s_t}{R_t})^\epsilon$. Note also that we can rewrite\par
+    $({A_t}{L_t})^{1-\alpha}$ as $\frac{1}{({A_t}{L_t})}^{\alpha-1}$. Writing this with $K_t^{\alpha-1}$ and writing $\frac{1}{({A_t}{L_t})^{\epsilon}}$ with $({s_E}{R_t})^{\epsilon}$ yields: \par
+    $\alpha(\frac{K_t}{{A_t}{L_t}})^{\alpha-1}(\frac{{s_E}{R_t}}{{A_t}{L_t}})^{\epsilon} = r_t = \frac{\partial{Y_t}}{\partial{K_t}}$.
+    
+    \bigskip
+    \bigskip
+    
+    \item $\frac{\partial{Y_t}}{\partial{L_t}} = \beta{K_t}^{\alpha}({A_t}{L_t})^{\beta-1}({s_E}{R_t})^\epsilon$;\par
+    inserting $\beta$ as we did before, we have: $(1-\alpha-\epsilon){K_t}^{\alpha}({A_t}{L_t})^{(1-\alpha-\epsilon)-1}({s_E}{R_t})^\epsilon$\par
+    $\Leftrightarrow(1-\alpha-\epsilon){K_t}^{\alpha}({A_t}{L_t})^{-\alpha-\epsilon}({s_E}{R_t})^\epsilon$ \par
+    $\Leftrightarrow \beta(\frac{K_t}{{A_t}{L_t}})^{\alpha}(\frac{{s_E}{R_t}}{{A_t}{L_t}})^{\epsilon} = w_t = \frac{\partial{Y_t}}{\partial{L_t}}$.
+    
+    \bigskip
+    \bigskip
+    
+    \item $\frac{\partial{Y_t}}{\partial({s_E}{R_t})} = \epsilon{K_t}^{\alpha}({A_t}{L_t})^{\beta}({s_E}{R_t})^{\epsilon-1}$. Again, since $\epsilon = 1-\alpha-\beta$, inputting this in the equation gives us: $(1-\alpha-\beta){K_t}^{\alpha}({A_t}{L_t})^{\beta}({s_E}{R_t})^{(1-\alpha-\beta)-1}$\par
+    $\Leftrightarrow(1-\alpha-\beta){K_t}^{\alpha}({A_t}{L_t})^{\beta}({s_E}{R_t})^{-\alpha-\beta}$. \par Additionally, because $\beta = 1-\alpha-\epsilon$ and $-\beta = -(1-\alpha-\epsilon) = -1 + \alpha+\epsilon$, inserting $\beta$ and $-\beta$ in the equation gives $(1-\alpha-\beta){K_t}^{\alpha}({A_t}{L_t})^{1-\alpha-\epsilon}({s_E}{R_t})^{-\alpha-1 + \alpha+\epsilon}$\par
+    $\Leftrightarrow (1-\alpha-\beta){K_t}^{\alpha}({A_t}{L_t})^{-\alpha}({A_t}{L_t})^{1-\epsilon}({s_E}{R_t})^{\epsilon-1}$\par
+    Thus, since $({A_t}{L_t})^{1-\epsilon} = (\frac{1}{{A_t}{L_t}})^{\epsilon-1}$, we have:\par
+    $\epsilon(\frac{K_t}{{A_t}{L_t}})^{\alpha}(\frac{{s_E}{R_t}}{{A_t}{L_t}})^{\epsilon-1} = u_t = \frac{\partial{Y_t}}{\partial({s_E}{R_t})}$.
+
+\end{itemize}
+
+\pagebreak
+
+\noindent\textit{b) Find the income shares $\frac{{r_t}{K_t}}{Y_t}$, $\frac{{w_t}{L_t}}{Y_t}$ and $\frac{{u_t}({s_E}{R_t})}{Y_t}$, and show that they are constant.} \par
+
+\bigskip
+
+Since the values $r_t = \frac{\partial{Y_t}}{\partial{K_t}}$, $w_t = \frac{\partial{Y_t}}{\partial{L_t}}$ and $u_t = \frac{\partial{Y_t}}{\partial({s_E}{R_t})}$, we insert these values in \textit{b)}:
+
+\begin{itemize}
+
+    \item $\frac{K_t}{Y_t}{\frac{\partial{Y_t}}{\partial{K_t}}} = K_t\frac{\alpha{K_t}^{\alpha-1}({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon}{{K_t}^\alpha({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon}
+    = K_t\frac{\alpha{K_t}^{-1}{K_t}^{\alpha}({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon}{{K_t}^\alpha({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon}
+    = {K_t}{\alpha}{K_t}^{-1} = \alpha$
+    
+    \bigskip
+    \bigskip
+    
+    \item $\frac{L_t}{Y_t}{\frac{\partial{Y_t}}{\partial{L_t}}} = L_t\frac{\beta{K_t}^{\alpha}({A_t}{L_t})^{\beta-1}({s_E}{R_t})^\epsilon}{{K_t}^\alpha({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon}
+    = L_t\frac{\beta{L_t}^{-1}{L_t}^{\beta}{K_t}^\alpha({s_E}{R_t})^\epsilon}{{K_t}^\alpha({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon}
+    = {L_t}{\beta}{L_t}^{-1} = \beta$
+    
+    \bigskip
+    \bigskip
+    
+    \item $\frac{{s_E}{R_t}}{Y_t}{\frac{\partial{Y_t}}{\partial({{s_E}{R_t}})}} = ({s_E}{R_t})\frac{\epsilon{K_t}^{\alpha}({A_t}{L_t})^{\beta}({s_E}{R_t})^{\epsilon-1}}{{K_t}^\alpha({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon}
+    =({s_E}{R_t})\frac{\epsilon({s_E}{R_t})^{-1}{K_t}^\alpha{L_t}^{\beta}({s_E}{R_t})^{\epsilon}}{{K_t}^\alpha({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon}$\par
+    $= ({s_E}{R_t}){\epsilon}({s_E}{R_t})^{-1} 
+    = \epsilon$
+    
+    \bigskip
+    \bigskip
+    
+\end{itemize}
+
+The income shares are constant because they are equal to the constant parameters $\alpha$, $\beta$, and $\epsilon$. Also, because $\frac{X}{Y}{\frac{\partial{Y}}{\partial{X}}}$ is defined as the elasticity of X with respect to Y, is easy to notice that the income shares $\alpha$, $\beta$, and $\epsilon$ correspond to the elasticity of their respective production input with respect to production, which is constant.
 
 
-\noindent\textit{b) Find the income shares $\frac{{r_t}{K_t}}{Y_t}$, $\frac{{w_t}{L_t}}{Y_t}$ and $\frac{{w_t}({s_e}{R_t})}{Y_t}$ show that they are constant.} \par
-
-
+\pagebreak
 
 \noindent\textit{c) Write down the production function in per capita units, and show that
 the (approximate) growth rate of $y_t$ on the balanced growth path (i.e.
