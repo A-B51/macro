@@ -1,0 +1,139 @@
+\documentclass[11pt]{article} % font size
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{url}
+\usepackage{bbm}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{rotating}
+\usepackage{harvard}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{subfiles}
+\usepackage{tabularx}
+\usepackage{xspace}
+\usepackage[final]{pdfpages}
+
+
+% setting up the design
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+\renewcommand{\baselinestretch}{1.5} % line spacing
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.99}
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\floatpagefraction}{0.99}
+\setlength{\footnotesep}{5mm}
+\setlength{\parindent}{0em} % length of indent
+\setlength{\parskip}{1em} % length of paragraph skip
+
+% some shortcuts and user-declared macros
+\def\k{\ensuremath\kappa}
+\def\l{\ensuremath\lambda}
+
+%\addtolength{\oddsidemargin}{-0.5cm} % paper dimensions
+%\addtolength{\evensidemargin}{-0.5cm}
+%\addtolength{\textwidth}{1cm}
+%\addtolength{\topmargin}{-0.5cm}
+
+
+\begin{document}
+\title{\huge{Macroeconomics III}}
+
+\author{The Solow Model: Human Capital and Scarce Ressources\\
+    \\
+    --- Exercise 3 ---\\
+    \\
+    Pascal Amiet (18-605-887)\\
+    \\
+    André Bittencourt (17-622-887)\\
+    \\
+    Juliette Le Roy (18-614-008)\\
+    \\
+    \textbf{Lecturer:}\\Guido Cozzi\\
+    University of St.Gallen}
+\date{March 24, 2020}
+\maketitle
+\thispagestyle{empty}
+
+\pagebreak
+\section{Exercise 3.1}
+\bigskip
+\textit{This is a simulation exercise related to the Solow model with human capital.
+Assume the following parameters for this economy: $\alpha = \frac{2}{6}$ and $\phi = \frac{1}{6}$, $s_K = 0.20$, $n = 0.20$, $g = 0.02$ and $\delta = 0.10$ and initialize
+technology as $A_0 = 1$. Assume that this economy starts on the balanced
+growth path in period 0. Also, the government considers to permanently
+increase either $s_H$ or $s_K$ from period 20.}\par
+
+
+
+\noindent\textit{b) Suppose the government decides to increase $s_K$ to 0.30 in period 20. Simulate this economy (Economy 1), i.e. produce time series for $\Tilde{k_{t}}$, $\Tilde{h_{t}}$, $\Tilde{y_{t}}$, $\Tilde{c_{t}}$, $s_K\Tilde{y_{t}}$ (i.e. investment into human capital), $A_t$, $\ln{(y_t)}$, $\ln{(c_t)}$ and ${g_t}^y = \ln{(y_t)} - \ln{(y_{t - 1})}$ Simulate 200 periods.}\par
+
+
+
+\noindent\textit{c) Now suppose that instead of changing $s_K$, the government decides to
+increase $s_H$ to 0.30 in period 20. Simulate this economy (Economy 2),
+creating the same time series as in b).}\par
+
+
+
+\noindent\textit{d) Produce diagrams showing the evolution of the following variables:
+\begin{itemize}
+    \item Diagram 1: $\Tilde{k_t}$
+    \item Diagram 2: $\Tilde{h_t}$
+    \item Diagram 3: $\Tilde{y_t}$
+    \item Diagram 4: $\Tilde{c_t}$
+    \item Diagram 5: $\ln{(y_t)}$
+    \item Diagram 6: $\ln{(c_t)}$
+    \item Diagram 7: ${g_t}^y$
+\end{itemize}
+In each of the diagrams, show the evolution for both economies. Interpret
+your results. Does the fact that $\alpha$ and $\phi$ are not equal influence in any
+way your fndings?}\par
+
+
+\pagebreak
+\section{Exercise 3.2}
+\bigskip
+\textit{This is an analytical question based on the Solow model with oil. Consider
+the following aggregate production function, taken from section 7.2 in the
+textbook,}\par
+
+\begin{equation}
+    Y_t = {K_t}^\alpha({A_t}{L_t})^\beta({s_E}{R_t})^\epsilon,
+\end{equation}
+
+\textit{with $\alpha+\beta+\epsilon=1$, ${s_E}{R_t} = E_t$ is energy and $R_{t+1}=R_t-E_T$ (i.e. ${g_t}^R=-s_E$).}\par
+
+
+
+\noindent\textit{a) Take the first order conditions with respect to the three production factors and derive the factor rewards
+(i.e. find $r_t = \frac{\partial{Y_t}}{\partial{K_t}}$, $w_t = \frac{\partial{Y_t}}{\partial{L_t}}$ and $u_t =\frac{\partial{Y_t}}{\partial({s_E}{R_t})}$).}\par
+
+
+
+\noindent\textit{b) Find the income shares $\frac{{r_t}{K_t}}{Y_t}$, $\frac{{w_t}{L_t}}{Y_t}$ and $\frac{{w_t}({s_e}{R_t})}{Y_t}$ show that they are constant.} \par
+
+
+
+\noindent\textit{c) Write down the production function in per capita units, and show that
+the (approximate) growth rate of $y_t$ on the balanced growth path (i.e.
+where $y_t$ and $k_t$ grow at the same rate) equals}\par
+
+\begin{equation}
+    g^y=\frac{\beta}{\beta+\epsilon}{g^A}-\frac{\epsilon}{\beta+\epsilon}{n}-\frac{\epsilon}{\beta+\epsilon}{s_E}
+\end{equation}
+
+\noindent\textit{Hint: use $\alpha+\beta+\epsilon=1$}
+
+
+
+\noindent\textit{d) Using equation (2) and your solutions to b), show that the growth rate of
+rt is zero and that wages grow at a constant rate on the balanced growth
+path. Furthermore, find the growth rate of $u_t$ on the BGP.}\par
+
+
+
+\end{document}
